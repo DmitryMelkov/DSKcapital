@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{ "title": "Главная" })
+
+<body class="body">
+  @@include('html/header.html',{ })
+  <main>
+    <div class="breadcrumbs">
+      <div class="container">
+        <ol class="breadcrumbs__list list-reset">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="./">
+              <span class="breadcrumbs__span">Главная</span>
+            </a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="./">
+              <span class="breadcrumbs__span">Каталог товаров</span>
+            </a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="./">
+              <span class="breadcrumbs__span">Частное домостроение</span>
+            </a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="./">
+              <span class="breadcrumbs__span">Плиты перекрытия</span>
+            </a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="./">
+              <span class="breadcrumbs__span">Плиты ПК</span>
+            </a>
+          </li>
+          <li class="breadcrumbs__item">
+            <span class="breadcrumbs__span breadcrumbs__span-active">ПК-63-12-8</span>
+          </li>
+        </ol>
+      </div>
+    </div>
+    <section class="product">
+      <div class="container product__container">
+        <h1 class="product__title title-reset">ПК-63-12-8</h1>
+        <div class="product__top-raiting">
+          <div class="product__top-raiting-items">
+            <input type="radio" class="product__top-raiting-item" value="5" name="rating" id="rating-5">
+            <label class="product__top-raiting-label" for="rating-5"></label>
+            <input type="radio" class="product__top-raiting-item" value="4" name="rating" id="rating-4">
+            <label class="product__top-raiting-label" for="rating-4"></label>
+            <input type="radio" class="product__top-raiting-item" value="3" name="rating" id="rating-3">
+            <label class="product__top-raiting-label" for="rating-3"></label>
+            <input type="radio" class="product__top-raiting-item" value="2" name="rating" id="rating-2">
+            <label class="product__top-raiting-label" for="rating-2"></label>
+            <input type="radio" class="product__top-raiting-item" value="1" name="rating" id="rating-1">
+            <label class="product__top-raiting-label" for="rating-1"></label>
+          </div>
+        </div>
+
+      </div>
+      <div class="product__tab">
+        <div class="product__tabs-nav">
+          <div class="swiper product__btn-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide product__btn-slide">
+                <button class="product__tabs-btn active btn-reset" type="button" data-tab="#tab_1">
+                  все о товаре
+                </button>
+              </div>
+              <div class="swiper-slide product__btn-slide">
+                <button class="product__tabs-btn btn-reset" type="button" data-tab="#tab_2">
+                  характеристики
+                </button>
+              </div>
+              <div class="swiper-slide product__btn-slide">
+                <button class="product__tabs-btn btn-reset" type="button" data-tab="#tab_3">
+                  Обзор
+                </button>
+              </div>
+              <div class="swiper-slide product__btn-slide">
+                <button class="product__tabs-btn btn-reset" type="button" data-tab="#tab_4">
+                  Еще что-то
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="product__tabs-content container">
+          <div class="product__tabs-item active" id="tab_1">
+            <div class="swiper product__content-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide product__content-slide">
+                  <img src="@img/img.png" alt="" class="product__content-slide-img">
+                </div>
+                <div class="swiper-slide product__content-slide">
+                  <img src="@img/img.png" alt="" class="product__content-slide-img">
+                </div>
+                <div class="swiper-slide product__content-slide">
+                  <img src="@img/img.png" alt="" class="product__content-slide-img">
+                </div>
+                <div class="swiper-slide product__content-slide">
+                  <img src="@img/img.png" alt="" class="product__content-slide-img">
+                </div>
+                <div class="swiper-slide product__content-slide">
+                  <img src="@img/img.png" alt="" class="product__content-slide-img">
+                </div>
+                <div class="swiper-slide product__content-slide">
+                  <img src="@img/img.png" alt="" class="product__content-slide-img">
+                </div>
+              </div>
+              <div class="swiper-pagination tab-content-pagination"></div>
+            </div>
+          </div>
+          <div class="product__tabs-item" id="tab_2">
+            tab2
+          </div>
+          <div class="product__tabs-item" id="tab_3">
+            tab3
+          </div>
+          <div class="product__tabs-item" id="tab_4">
+            tab4
+          </div>
+        </div>
+      </div>
+
+      <div class="product__characteristics container">
+        <h2 class="product__characteristics-title title-reset">характеристики</h2>
+        <div class="product__characteristics-content">
+          <div class="product__characteristics-item">
+            <span class="product__characteristics-parameter">Наименование:</span>
+            <span class="product__characteristics-value">Плиты ПК</span>
+          </div>
+          <div class="product__characteristics-item">
+            <span class="product__characteristics-parameter">Завод производитель:</span>
+            <span class="product__characteristics-value">Москва и МО</span>
+          </div>
+          <div class="product__characteristics-item">
+            <span class="product__characteristics-parameter">Технические условия:</span>
+            <span class="product__characteristics-value">ГОСТ 9561-91</span>
+          </div>
+          <div class="product__characteristics-item">
+            <span class="product__characteristics-parameter">Длина, мм:</span>
+            <span class="product__characteristics-value">6300</span>
+          </div>
+          <div class="product__characteristics-item">
+            <span class="product__characteristics-parameter">Ширина, мм:</span>
+            <span class="product__characteristics-value">1200</span>
+          </div>
+          <div class="product__characteristics-item">
+            <span class="product__characteristics-parameter">Высота, мм:</span>
+            <span class="product__characteristics-value">220</span>
+          </div>
+          <div class="product__characteristics-item">
+            <span class="product__characteristics-parameter">Расчетная нагрузка, кг/м2:</span>
+            <span class="product__characteristics-value">800</span>
+          </div>
+          <div class="product__characteristics-item">
+            <span class="product__characteristics-parameter">Вес 1шт., т:</span>
+            <span class="product__characteristics-value">1,755</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="product__buy">
+          <span class="product__buy-piece">484.00 Р/шт.</span>
+          <span class="product__buy-meter">154.88 Р/м2.</span>
+          <div class="product__buy-vendor">
+            <span class="product__buy-vendor-param">Артикул: </span>
+            <span class="product__buy-vendor-value">0543600</span>
+          </div>
+          <div class="product__buy-basket product__grid">
+            <div class="product__basket-inner product__grid-item">
+              <button class="product__basket-minus btn-reset">
+                <img src="@img/minus.png" alt="basket-img" class="product__basket-minus-img">
+              </button>
+              <div>
+                <input class="product__basket-input product__basket-input-js" type="number" value="10" disabled>
+                <span class="product__basket-span">шт.</span>
+              </div>
+              <button class="product__basket-plus btn-reset">
+                <img src="@img/Plus.png" alt="basket-img" class="product__basket-plus-img">
+              </button>
+            </div>
+            <div class="product__basket-btn-content product__grid-item">
+              <button class="product__basket-btn btn-reset">В корзину</button>
+            </div>
+            <button class="product__call-btn-like btn-reset product__grid-item">В избранное</button>
+            <button class="product__call-btn-call btn-reset product__grid-item">Позвонить</button>
+          </div>
+          <div class="product__buy-social">
+            <span class="product__social-span">Также для вашего удобства мы доступны в мессенджера</span>
+            <div class="product__social-links">
+              <a class="product__social-link" href="#">
+                <img src="@img/WhatsApp.png" alt="social-img" class="product__social-img">
+              </a>
+              <a class="product__social-link" href="#">
+                <img src="@img/Viber.png" alt="social-img" class="product__social-img">
+              </a>
+              <a class="product__social-link" href="#">
+                <img src="@img/Telegram.png" alt="social-img" class="product__social-img">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+
+  </main>
+  @@include('html/footer.html',{ })
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>

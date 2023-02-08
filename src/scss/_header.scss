@@ -1,0 +1,94 @@
+@import "_variables";
+@import "_mixins";
+
+.header {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.logo {
+  margin-right: 15px;
+}
+
+.search {
+  margin-right: 15px;
+  width: 80%;
+
+  &__form {
+    display: flex;
+  }
+  &__input {
+    width: 80%;
+    padding-left: 10px;
+    @include text(16px, 20px, 400, $colorBlack);
+    border: none;
+    border-bottom: 1px solid $colorGrey;
+    @include transition(border-bottom, 0.3s, ease-in-out);
+  }
+  &__input::placeholder {
+    padding-left: 10px;
+    @include text(14px, 20px, 400, $colorGrey);
+  }
+  &__btn {
+    width: 20%;
+    opacity: 1;
+    @include transition(opacity, 0.3s, ease-in-out);
+
+  }
+}
+
+.burger {
+  &__btn {
+    opacity: 1;
+  }
+}
+
+//hover
+@media (min-width: 1024px) {
+  .search {
+    &__input:hover {
+      border-bottom: 1px solid $colorYellow;
+    }
+    &__btn:hover {
+      opacity: 0.7;
+    }
+  }
+  .burger {
+    &__btn:hover {
+      opacity: 1;
+    }
+  }
+}
+
+//active, focus
+.search {
+  &__input:active {
+    border-bottom: 1px solid $colorYellow;
+  }
+  &__input:focus {
+    border-bottom: 1px solid $colorYellow;
+    outline: none;
+  }
+  &__btn:active {
+    opacity: 0.7;
+  }
+  &__btn:focus {
+    opacity: 0.7;
+    outline: none;
+  }
+}
+
+.burger {
+  &__btn:active {
+    opacity: 0.6;
+  }
+  &__btn:focus {
+    opacity: 0.6;
+    outline: none;
+  }
+}
